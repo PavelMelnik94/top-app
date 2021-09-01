@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": false, //если встречается в файле js, то выдаст ошибку
+    "skipLibCheck": true, // игнорируем при компиляции ворнинги и ошибки в библиотеках распологающихся в node_modules
+    "strict": true,
+    "strictPropertyInitialization": false, // необязательно инициализировать каждое свойство класса
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
