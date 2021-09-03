@@ -9,7 +9,7 @@
   border: none;
   border-radius: 5px;
   font-size: 14px;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .primary {
@@ -30,4 +30,20 @@
 .ghost:hover {
   color: var(--white);
   background-color: var(--primary);
+}
+
+.arrow {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.down {
+  transform: rotate(90deg);
+  transition: all 0.3s;
+}
+
+.primary svg,
+.ghost:hover svg {
+  transition: all 0.2s;
+  fill: var(--white);
 }
