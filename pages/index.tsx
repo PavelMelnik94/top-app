@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Button, Htag, P, Tag } from "../components";
 import { Rating } from "../components/Rating/Rating";
+import { Layout } from "../layout/Layout";
 
 export default function Home(): JSX.Element {
   const [rating, setRating] = useState<number>(4);
 
   return (
-    <>
+    <Layout>
       <Htag tag="h1">Текст h1</Htag>
       <Htag tag="h2">Текст h2</Htag>
       <Htag tag="h3">Текст h3</Htag>
@@ -21,7 +22,7 @@ export default function Home(): JSX.Element {
       <P size="m">paragraph 'M'</P>
       <P size="l">paragraph 'L'</P>
       <Tag color={"ghost"}>ярлык стандартный</Tag>
-      <Tag color={"red"}>ярлык красны</Tag>
+      <Tag color={"red"}>ярлык красный</Tag>
       <Tag color={"gray"}>ярлык серый</Tag>
       <Tag color={"green"}>ярлык зеленый</Tag>
       <Tag color={"primary"}>ярлык primary</Tag>
@@ -36,6 +37,6 @@ export default function Home(): JSX.Element {
       </Tag>
 
       <Rating rating={rating} isEditable={true} setRating={setRating} />
-    </>
+    </Layout>
   );
 }
