@@ -35,6 +35,14 @@
   padding-left: 32px;
   border-left: 1px solid var(--gray-light);
 }
+
+.secondLevelBlock {
+  display: none;
+}
+
+.secondLevelBlockOpened {
+  display: block;
+}
 .secondLevelBlock:last-child {
   margin-bottom: 20px;
 }
